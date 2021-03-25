@@ -125,14 +125,14 @@ public class AdminAlarmController {
 		
 		String api_key = "NCSSFISVTTSUSP14"; //api key
 	        String api_secret = "";  // api secret
-//        
-//        		
+        
+       		
         CoolSms coolSms = new CoolSms(api_key, api_secret);
         JSONObject result1 = coolSms.balance();
         System.out.println(result1);
         HashMap<String, String> set = new HashMap<String, String>();
         set.put("to", phone); // 수신번호
-//
+
         set.put("from", (String)request.getParameter("from")); // 발신번호
         set.put("text", (String)request.getParameter("text")); // 문자내용
         set.put("type", "sms"); // 문자 타입
