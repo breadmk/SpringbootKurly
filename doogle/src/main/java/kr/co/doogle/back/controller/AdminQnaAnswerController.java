@@ -58,7 +58,7 @@ public class AdminQnaAnswerController {
 		return "back/qnaAnswer/qnaAnswerWrite";
 	}
 	
-	// 자
+	// 단일글 조회
 	@RequestMapping("/admin/quaAnswerView")
 	public String quaAnswerView(HttpServletRequest request,Model model) {
 		int qnno = Integer.parseInt(request.getParameter("no"));
@@ -70,13 +70,15 @@ public class AdminQnaAnswerController {
 		model.addAttribute("url","/admin/quaAnswerView");
 		return "back/qnaAnswer/qnaAnswerView";
 	}
-
+	
+	//답변등록 ok
 	@RequestMapping("/admin/qnaAnswerWriteOk")
 	public String qnaAnswerWriteOk(Qna_AnswerDTO dto) {
 		qnaAnswerMapper.insert(dto);
 		return "redirect:/admin/qnaAnswer";
 	}
 	
+	//답변글 메일로 전송
 	@RequestMapping("/admin/qnaAnswerMail")
 	public void qnaAnswerMail(HttpServletRequest request,PrintWriter out) throws Exception {
 		AlarmMailSend ams = AlarmMailSend.getInstance();
@@ -97,6 +99,7 @@ public class AdminQnaAnswerController {
 //		return "redirect:/admin/qnaAnswer";
 	}
 	
+	//답변 문자로 전송
 	@RequestMapping("/admin/qnaAnswerPhone")
 	public void qnaAnswerPhone(HttpServletRequest request,PrintWriter out) {
 		
