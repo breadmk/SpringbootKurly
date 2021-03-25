@@ -47,7 +47,7 @@ public class AdminQnaAnswerController {
 		return "back/qnaAnswer/list";
 	}
 	
-	// 1:1 문의 답변 등록
+	// 1:1 문의 답변 등록-1
 	@RequestMapping("/admin/qnaAnswerWrite")
 	public String quaAnswerWrite(HttpServletRequest request,Model model) {
 		int qnno = Integer.parseInt(request.getParameter("no"));
