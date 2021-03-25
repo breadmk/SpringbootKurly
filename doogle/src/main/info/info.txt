@@ -1,0 +1,50 @@
+﻿- 메이븐 라이브러리 검색사이트
+https://mvnrepository.com/
+https://search.maven.org/
+
+- spring 설정 api
+https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html
+
+- sitemesh
+* spring lagacy project 설정방법
+- pom.xml 디펜던시추가
+- web.xml 추가
+- sitemesh.xml
+- sitemesh-decorators.xml
+- (WEB-INF 폴더에 추가)
+- views/common/default.jsp
+
+- lombok설치
+java -jar lombok.jar
+-javaagent:lombok.jar
+
+- 변수명 표기법
+- 스네이크 케이스 (_)
+snake_case
+- 케밥 케이스 (-)
+kebab-case
+- 카멜 케이스 (첫단어 소문자로 시작 단어마다 대문자)
+camelCase
+- 파스칼 케이스 (단어별로 대문자)
+PascalCase
+헝가리언 표기법 (접두어 사용)
+strName (string -> str)
+bBusy (boolean -> b)
+
+- summernote edit
+https://summernote.org/
+
+- 프로젝트 repository 주소
+https://github.com/BruceYi119/doogle
+
+- 사용포트확인
+netstat -ano
+
+- 프로세스 강제 종료
+taskkill /pid 24068 /f
+
+- 스크롤 최하단
+window.scrollTo(0, document.scrollingElement.scrollHeight)
+
+- oracle 정규식
+select b.*, p.pname, f.name from basket b left join product p on b.pno = p.pno left join files f on REGEXP_SUBSTR(p.fno, '[^,]+', 1, 1) = f.fno;

@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+
+#container{
+	width:100%;
+	height:6200px;
+	min-width:90%;
+	position:relative;
+	margin:0;
+	padding:0;
+}
+#container #event_tit{
+	width:100%;
+	height: 550px;
+	background-image: url("/static/front/img/shop/event/default/new_event1.jpg");
+	background-size:100% 550px;
+	background-position: 40% 100%
+}
+#container #event_tit .view_event1{
+	width:80%;
+	height:420px;
+}
+
+#container #event_tit .view_event1 .brand_tit{
+font-family: noto sans,malgun gothic,AppleGothic,dotum;;
+letter-spacing: -.05em;
+color: #5f0080;
+background:#f0eeef;
+word-break: break-all;
+text-align: right;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+display: block;
+overflow: hidden;
+position: relative;
+font-size:350%; 
+left: 17%;
+top: 135px;
+width:25%;
+height:75px;
+}
+#container .btn_link{
+	height: 71px;
+	text-decoration: none;
+}
+
+#container .box_btn{
+font-family: noto sans,malgun gothic,AppleGothic,dotum;
+letter-spacing: -.05em;
+text-align: center;
+word-break: break-all;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+padding-top:12px;
+text-decoration: none;
+font-size:25px;
+overflow: hidden;
+position: relative;
+width: 300px;
+height: 71px;
+border: 2px solid #5f0080;
+border-radius: 50px;
+}
+#container #event_tit .view_event1 .box_btn{
+color: white;
+background:#5f0080;
+left: 28%;
+top: 230px;
+font-weight:600;
+}
+#container #event_tit .view_event1 .box_btn:hover{
+color: #5f0080;
+background:white;
+font-weight:700;
+}
+#container #event_tit .view_event2{
+font-family: noto sans,malgun gothic,AppleGothic,dotum;
+line-height: 1;
+letter-spacing: -.05em;
+color: #4c4c4c;
+font-size: 12px;
+box-sizing: border-box;
+padding: 0;
+word-break: break-all;
+position: relative;
+width:100%;
+height:130px;
+margin: 0 auto;
+background: #4c4c4c;
+text-align: center;
+opacity: 0.7; /*투명도*/
+}
+
+#container #event_tit .view_event2 ul{
+height:inherit; /*상속받기*/
+
+}
+#container #event_tit .view_event2 li{
+float: left;
+height:inherit;
+width:20%;
+color:#cccccc;
+border: 1px solid #cccccc;
+padding-top: 50px;
+font-size:30px;
+}
+#container #event_tit .view_event2 .li_click:hover{
+cursor: pointer;
+background: #2e2e2e;
+}
+#container #event_tit .view_event2 li:after{
+	clear: both;
+}
+#container .event_benefit{
+width:inherit;
+height:800px;
+background-repeat:no-repeat;
+background-position: center;
+background-size:100% 800px;
+}
+#container #benefit1{
+margin-top:100px;
+background-image: url("../img/shop/event/default/img_benefit1.png");
+background-size:80% 650px;
+}
+#container #benefit2{background-image: url("/static/front/img/shop/event/default/혜택2-1.jpg");}
+#container #benefit3{background-image: url("/static/front/img/shop/event/default/혜택3.jpg");}
+#container #benefit4{background-image: url("/static/front/img/shop/event/default/혜택4.jpg");}
+#container #benefit5{background-image: url("/static/front/img/shop/event/default/혜택5.jpg");}
+#container .event_goods{
+width:100%;
+height:1150px;
+}
+#container .wellcome{
+width:1200px;
+height:500px;
+padding-left:35px;
+}
+#container .wellcome .wellcome_goods{
+width:330px;
+height:480px;
+float:left;
+margin:15px 25px;
+background-size: 330px 480px;
+cursor: pointer;
+position: relative;
+}
+
+#container .wellcome_goods >div{
+position: absolute;
+bottom: -38px;
+left:60px;
+}
+#container .wellcome_goods .example span{
+color:#7a7a7a;
+width:100px;
+height:10px;
+font-size: 150px;
+line-height: 5px;
+bottom:0;
+opacity: 0.7;
+}
+#container .wellcome_goods .example strong{
+height:10px;
+color:purple;
+font-size: 25px;
+vertical-align: top;
+}
+#container .clear_div{
+clear:both;
+height:0;
+width:0;
+}
+#container .wellcome #w_goods1{background-image: url("/static/front/img/shop/event/default/img_goods1.jpg");}
+#container .wellcome #w_goods2{background-image: url("/static/front/img/shop/event/default/img_goods2.jpg");}
+#container .wellcome #w_goods3{background-image: url("/static/front/img/shop/event/default/img_goods3.jpg");}
+#container .wellcome #w_goods4{background-image: url("/static/front/img/shop/event/default/img_goods4.jpg");}
+#container .wellcome #w_goods5{background-image: url("/static/front/img/shop/event/default/img_goods5.jpg");}
+#container .wellcome #w_goods6{background-image: url("/static/front/img/shop/event/default/img_goods6.jpg");}
+#container .event_goods p{
+font-size: 16px;
+font-weight: 800;
+color: #5c5c5c;
+margin-top: 20px;
+}
+#container .event_goods h1{
+color: #5f0080;
+margin: 50px;
+}
+#container .best_div{
+width:1200px;
+height:340px;
+margin:10px;
+padding-left: 70px;
+}
+#container .best_div .best_goods{
+float:left;
+width:194px;
+height: 315px;
+background-repeat: no-repeat;
+margin:10px;
+cursor: pointer;
+}
+#container .best_div #b_goods1{background-image: url("/static/front/img/shop/event/default/img_best_goods1.jpg");}
+#container .best_div #b_goods2{background-image: url("/static/front/img/shop/event/default/img_best_goods2.jpg");}
+#container .best_div #b_goods3{background-image: url("/static/front/img/shop/event/default/img_best_goods3.jpg");}
+#container .best_div #b_goods4{background-image: url("/static/front/img/shop/event/default/img_best_goods4.jpg");}
+#container .best_div #b_goods5{background-image: url("/static/front/img/shop/event/default/img_best_goods5.jpg");}
+#container .best_div #b_goods6{background-image: url("/static/front/img/shop/event/default/img_best_goods6.jpg");}
+#container .best_div #b_goods7{background-image: url("/static/front/img/shop/event/default/img_best_goods7.jpg");}
+#container .best_div #b_goods8{background-image: url("/static/front/img/shop/event/default/img_best_goods8.jpg");}
+#container .best_div #b_goods9{background-image: url("/static/front/img/shop/event/default/img_best_goods9.jpg");}
+#container .best_div #b_goods10{background-image: url("/static/front/img/shop/event/default/img_best_goods10.jpg");}
+
+#container .select_div{
+width: 100%;
+padding-left:30px;
+}
+#container .select_div2{
+width: 700px;
+}
+#container .select_div a{
+float: left;
+margin:20px;
+}
+#container .select_div #white_btn{
+color: #5f0080;
+background:white;
+font-weight: 540;
+}
+
+
+#container .select_div #purple_btn{
+color: white;
+background:#5f0080;
+font-weight: 540;
+}
+#container .select_div .box_btn:hover{
+box-shadow: 5px 5px 5px 5px gray;
+}
